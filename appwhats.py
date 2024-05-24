@@ -17,7 +17,7 @@ time.sleep(2) #certifica se whatsapp esta aberta
 
 #carregar os arquivos no excel com panda
 tabela =  pd.read_excel("nome do excel.xlsx")
-display(tabela[["nome","mensagem",'telefone']]) # confirindo se ta retornado as informações
+display(tabela[["nome","mensagem",'telefone']]) # conferindo se ta retornado as informações
 
 for linha in tabela.index:
   nome =  tabela.loc[linha,"nome"]
@@ -52,4 +52,4 @@ for linha in tabela.index:
       #enviando
       navegador.find_elements(By.XPATH,'//*[@id="app"]/div/div[2]/div[2]/div[2]/span/div/span/div/div/div[2]/div/div[2]/div[2]/div/div/span').click()
 
-    time.sleep(5)
+  time.sleep(5)
